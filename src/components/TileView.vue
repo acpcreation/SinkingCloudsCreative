@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <Tile title="Home" subTitle="Overview of site" icon="..." footer="Creativity, Invention" pageName="aboutHome"/>
+    <Tile title="About" subTitle="Overview of site" icon="..." footer="Creativity, Invention" pageName="aboutHome"/>
     <Tile title="Space Box" subTitle="Rotating spacial cube" icon="..." footer="A-Frame" pageName="spaceBox"/> <!--https://ifunny.co/fun/31BowYUG7?s=cl-->
     <Tile title="Crack Generator" subTitle="Dynamically creates cracks" icon="..." footer="iFunny*" pageName="crackGenerator"/>
     <Tile title="Audio Visuals" subTitle="Analyzes audio, creates visual orb" icon="..." footer="*" pageName="audioVisuals"/>

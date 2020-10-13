@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <fd-button class="returnButton" styling="emphasized" type="standard" icon="nav-back" @click="openPage" />
-    <div style="margin:20% 30%; ">
+    <div style="padding:10% 30%; ">
 
       <fd-input v-model="phoneNumber" placeholder="Phone Number" />
       <br>
