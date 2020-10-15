@@ -5,8 +5,8 @@
     <Tile title="Crack Generator" subTitle="Dynamically creates cracks" icon="..." footer="iFunny*" pageName="crackGenerator"/>
     <Tile title="Audio Visuals" subTitle="Analyzes audio, creates visual orb" icon="..." footer="*" pageName="audioVisuals"/>
     <Tile title="Dots" subTitle="https://ifunny.co/fun/Ua6zFELw7?s=cl" icon="..." footer="SVG" pageName="hana"/>
-    <Tile title="Messaging" subTitle="Websocket and REST Examples" icon="..." footer="Vue.js" pageName="websocketrest"/>
-    <Tile title="HANA" subTitle="Querying SAP HANA Express Edition" icon="..." footer="Node.js" pageName="hana"/>
+    <!-- <Tile title="Messaging" subTitle="Websocket and REST Examples" icon="..." footer="Vue.js" pageName="websocketrest"/>
+    <Tile title="HANA" subTitle="Querying SAP HANA Express Edition" icon="..." footer="Node.js" pageName="hana"/> -->
   </div>
 </template>
 
@@ -31,9 +31,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .main{
-  display: inline-grid;
-  grid-template-columns: auto auto auto auto auto;
-  padding: 20px 50px 10px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  padding: 20px 0px 0px 12px;
 }
 
 </style>

@@ -14,7 +14,9 @@
     "bootstrap-vue": "^2.17.3",
     "core-js": "^3.6.4",
     "fiori-fundamentals": "^1.7.4",
+    "fundamental-styles": "^0.1.0",
     "fundamental-vue": "^0.18.3",
+    "jquery": "^1.9.1",
     "vue": "^2.6.11",
     "vue-router": "^3.1.6"
   },

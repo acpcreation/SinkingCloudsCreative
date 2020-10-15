@@ -4,6 +4,10 @@ import Home from './views/Home.vue'
 import SpaceBox from './views/SpaceBox.vue'
 import HANA from './views/HANA.vue'
 import WebSocketREST from './views/WebSocketREST.vue'
+import Photos from './views/Photos.vue'
+import Videos from './views/Videos.vue'
+import Music from './views/Music.vue'
+import Merch from './views/Merch.vue'
 
 
 
@@ -31,6 +35,26 @@ export default new Router({
       path:'/hana',
       name:'hana',
       component: HANA
+    },
+    {
+      path:'/merch',
+      name:'merch',
+      component: Merch
+    },
+    {
+      path:'/photos',
+      name:'photos',
+      component: Photos
+    },
+    {
+      path:'/videos',
+      name:'videos',
+      component: Videos
+    },
+    {
+      path:'/music',
+      name:'music',
+      component: Music
     }
   ]
 })

@@ -1,6 +1,8 @@
 <template>
   <div class="app">
     <MainPages/>
+    <h2>Explore</h2>
+    <hr/>
     <TileView/>
   </div>
 </template>
@@ -20,7 +22,14 @@ export default {
 
 <style scoped>
 .app {
-  padding-top: 30px;
+  padding: 2vw;
 }
+
+h2{
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+
 
 </style>
