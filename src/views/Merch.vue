@@ -9,7 +9,7 @@
       <a v-for="i in merch" :key="i.id" @click="openProduct(i)">
         <b-card
           :title="i.title"
-          img-src="https://picsum.photos/600/300/?image=25"
+          :img-src="i.img"
           img-alt="Image" img-top
           class="mb-2 card">
           <b-card-text class="subtitle">
@@ -20,35 +20,48 @@
         </b-card>
       </a>
 
+      <div style="width:300px;"></div>
+      <div style="width:300px;"></div>
+      <div style="width:300px;"></div>
+      <div style="width:300px;"></div>
+
     </div>
     
-
+    <Purchase v-if="purchaseVisibility" @toggleProductView="toggleProductView()" :product="purchaseItem"/>
   </div>
 </template>
 
 <script>
+import Purchase from '@/components/PurchaseItem.vue'
+
 export default {
   name: 'Merch',
   props: {
     
   },
   components: {
-
+    Purchase
   },
+
   data(){
     return{
       merch:[
-        {id:"B-W-Hat", title:"Black SC Hat", subtitle:"Black Sinking Clouds Hat w/ White Design", type:"Hat", img:""},
-        {id:"N-W-Hat", title:"Navy SC Hat", subtitle:"Navy Sinking Clouds Hat w/ White Design", type:"Hat", img:""},
-        {id:"W-B-Hat", title:"White SC Hat", subtitle:"White Sinking Clouds Hat w/ Black Design", type:"Hat", img:""},
-        {id:"W-MAGA-NASA-Hat", title:"NASA MAGA Hat", subtitle:"White MAGA Hat w/ Space Design", type:"Hat", img:""},
+        {id:"B-W-Hat", title:"Black SC Hat", subtitle:"Black Sinking Clouds Hat w/ White Design", type:"Hat", img:"https://picsum.photos/600/300/?image=25", price:"$20"},
+        {id:"N-W-Hat", title:"Navy SC Hat", subtitle:"Navy Sinking Clouds Hat w/ White Design", type:"Hat", img:"https://picsum.photos/600/300/?image=25", price:"$20"},
+        {id:"W-B-Hat", title:"White SC Hat", subtitle:"White Sinking Clouds Hat w/ Black Design", type:"Hat", img:"https://picsum.photos/600/300/?image=25", price:"$20"},
+        {id:"W-MAGA-NASA-Hat", title:"NASA MAGA Hat", subtitle:"White MAGA Hat w/ Space Design", type:"Hat", img:"https://picsum.photos/600/300/?image=25", price:"$20"},
+
+        {id:"R-Varsity-Jacket", title:"Varsity Jacket", subtitle:"Sinking Clouds Burgundy Varsity Jacket", type:"Jacket", img:"https://picsum.photos/600/300/?image=25", price:"$20"},
       ],
+      
+      purchaseItem:[],
+      purchaseVisibility: false
+
     }
   },
 
   mounted() {
-    
-
+  
 
   },
 
@@ -58,7 +71,12 @@ export default {
     },
 
     openProduct: function(e){
-      console.log(e)
+      this.purchaseItem = e;
+      this.toggleProductView();
+    },
+
+    toggleProductView: function(){
+      this.purchaseVisibility = !this.purchaseVisibility;
     }
 
 

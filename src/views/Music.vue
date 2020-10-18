@@ -1,6 +1,8 @@
 <template>
   <div class="main">
-    <fd-button class="returnButton" styling="emphasized" type="standard" icon="nav-back" @click="openPage" />
+    <img class="iconImage" src="@/assets/MeltingCloudsWhite.png" @click="openPage" />
+
+    <!-- <fd-button class="returnButton" styling="emphasized" type="standard" icon="nav-back" @click="openPage" /> -->
     <h1>Music</h1>
     <hr>
 

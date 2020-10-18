@@ -23,9 +23,9 @@ export default {
     return{
       mainPages:[
         {id:0, title:"Merchandise", page:"merch", image:"https://picsum.photos/600/300/?image=25"},
-        {id:1, title:"Music", page:"music", image:"https://picsum.photos/600/300/?image=25"},
-        {id:2, title:"Photography", page:"photos", image:"https://picsum.photos/600/300/?image=25"},
-        {id:3, title:"Videography", page:"videos", image:"https://picsum.photos/600/300/?image=25"}
+        {id:1, title:"Music",       page:"music", image:"/img/music.JPG"},
+        {id:2, title:"Photography", page:"photos", image:"/img/photography.JPG"},
+        {id:3, title:"Videography", page:"videos", image:"/img/videos.JPG"}
       ]
     }
   },
@@ -46,7 +46,8 @@ export default {
     display: flex;
     justify-content:space-around;
     flex-wrap: wrap;
-    padding: 20px 65px;
+    flex-direction: row;
+    padding: 20px 30px;
     min-height: 40vh;
   }
 
@@ -57,6 +58,10 @@ export default {
     font-size: 22px;
     border:none;
     margin: 20px 10px;
+  }
+  
+  img{
+    height: 200px !important;
   }
   
 

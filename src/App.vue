@@ -25,7 +25,8 @@ export default {
     linear-gradient(to bottom, rgba(22, 22, 22, 0.85),rgba(0, 0, 0, 0.85)), 
     url('./assets/mountains.jpg'); 
 
-  border-top: 5px solid rgb(20, 20, 20);
+  /* border-top: 5px solid rgb(20, 20, 20); */
+  padding-bottom:100px;
 }
 
 a{
@@ -66,7 +67,7 @@ hr{
   top: 5px; */
   display: block;
   margin-left: auto;
-  margin-right: 5px;;
+  margin-right: auto;
   margin-top: -40px;
   margin-bottom: 10px;
   cursor:pointer;

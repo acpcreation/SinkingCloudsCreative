@@ -1,8 +1,8 @@
 <template>
   <div class="main">
-    <fd-button class="returnButton" styling="emphasized" type="standard" icon="nav-back" @click="openPage" />
+    <fd-button class="returnButton" styling="emphasized" type="light" icon="nav-back" @click="openPage" />
     <div>
-      <a-scene>
+      <a-scene> 
         <a-assets>
           <a-asset-item id="grid" src="/3dmodels/pointGrid.obj"></a-asset-item>
         </a-assets>
@@ -48,6 +48,10 @@ export default {
   position: absolute;
   left: 5px;
   top: 5px;
+}
+
+.returnButton :hover{
+  background-color:black; 
 }
 
 </style>

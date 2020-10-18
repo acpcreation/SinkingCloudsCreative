@@ -7,6 +7,7 @@
     <Tile title="Dots" subTitle="https://ifunny.co/fun/Ua6zFELw7?s=cl" icon="..." footer="SVG" pageName="hana"/>
     <!-- <Tile title="Messaging" subTitle="Websocket and REST Examples" icon="..." footer="Vue.js" pageName="websocketrest"/>
     <Tile title="HANA" subTitle="Querying SAP HANA Express Edition" icon="..." footer="Node.js" pageName="hana"/> -->
+
   </div>
 </template>
 
@@ -33,8 +34,8 @@ export default {
 .main{
   display: flex;
   flex-wrap: wrap;
-  justify-content:space-around;
-  padding: 20px 0px 0px 12px;
+  justify-content:space-between;
+  padding: 20px 10px 0px 12px;
 }
 
 </style>
