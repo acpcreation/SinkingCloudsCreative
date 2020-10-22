@@ -2,16 +2,22 @@
   <div class="overlay">
     <div class="main"> 
       <b-button variant="secondary" size="lg" @click="closeWindow()" class="close">X</b-button>
-      <img class="productImage" :src="product.img"/>
-      <div class="productDetails">
-        <h2>{{product.title}}</h2>
-        <br>
-        <p>{{product.type}} - {{product.price}}</p>
-        <p>{{product.subtitle}}</p>
-        <p>Venmo - @acpcreation</p>
-        <p>CashApp - $acpcreation</p>
-        <p>PayPal - acpcreation@gmail.com</p>
-        <p>Send payment amount with product title and quantity via payment method of choice. Send an email to SinkingCloudsBand@gmail.com if you have any questions.</p>
+      <div class="content">
+        <span>
+          <img class="productImage" :src="product.img"/>
+          <p>Send payment amount with product title and quantity via payment method of choice. Send an email to sinkingcloudsband@gmail.com if you have any questions.</p>
+
+        </span>
+        
+        <div class="productDetails">
+          <h2>{{product.title}}</h2>
+          <br>
+          <p>{{product.type}} - {{product.price}}</p>
+          <p>{{product.subtitle}}</p>
+          <p>Venmo - @acpcreation</p>
+          <p>CashApp - $acpcreation</p>
+          <p>PayPal - acpcreation@gmail.com</p>
+        </div>
       </div>
     </div>
 
@@ -62,28 +68,61 @@ export default {
   .main{
     background-color: white;
     border-radius: 5px;
-    margin: 10vh 20vw;
+    margin: 15vh 17vw;
+  }
+
+  .content{
     padding: 20px;
     display:flex;
     flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 
   .close{
     float:right;
+    padding: 5px;
+    margin: 10px 10px 10px -10px;
   }
 
   .productImage{
-    width:50vw;
+    width:40vw;
+    margin-bottom: 10px;
   }
 
   .productDetails{
-    padding: 20px 10px;
-    min-width: 30vh;
-    background-color: darkred;
+    padding: 20px 0px 20px 15px;
+    width: 100% !important;
+    /* min-width: 200px; */
+    /* max-width: 50vw; */
   }
 
   h2{
-     color: rgb(80, 80, 80);
+    color: rgb(80, 80, 80);
+    margin: -20px 0px 0px 0px !important;
   }
- 
+  
+  @media only screen and (max-width: 1000px) {
+    .main{
+      margin: 10vh 10vw;
+    } 
+  }
+
+  @media only screen and (max-width: 500px) {
+    .content {
+      flex-wrap: wrap;
+    }
+
+    h2{
+      margin-top: 20px!important;
+    }
+
+    .productImage{
+      width:62vw;
+    }
+    .productDetails{
+      padding: 10px 0px;
+    }
+
+  }
 </style>

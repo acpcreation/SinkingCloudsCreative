@@ -61,7 +61,7 @@ export default {
   }
   
   img{
-    height: 200px !important;
+    /* height: 200px !important; */
   }
   
 

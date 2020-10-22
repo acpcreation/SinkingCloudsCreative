@@ -16,7 +16,7 @@
             {{i.subtitle}}
           </b-card-text>
 
-          <b-button variant="primary">View Product</b-button>
+          <b-button variant="primary" class="viewProductButton">View Product</b-button>
         </b-card>
       </a>
 
@@ -118,6 +118,10 @@ export default {
 
 .subtitle{
   height: 60px;
+}
+
+.viewProductButton{
+  float:right;
 }
 
 /* .card h4{
