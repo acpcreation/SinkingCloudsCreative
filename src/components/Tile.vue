@@ -50,6 +50,7 @@ export default {
   font-size: 22px;
   text-align: left;
   letter-spacing: 1px;
+  text-transform: capitalize;
 }
 
 .subTitle{
@@ -58,6 +59,7 @@ export default {
   font-size: 14px;
   text-align: left;
   letter-spacing: 1px;
+  /* text-transform: capitalize; */
 }
 
 .footer{
@@ -68,6 +70,7 @@ export default {
   right: 15px;
   bottom: 13px;
   position: absolute;
+  text-transform: capitalize;
 }
 
 </style>
