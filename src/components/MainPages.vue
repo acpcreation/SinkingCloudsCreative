@@ -22,7 +22,7 @@ export default {
   data(){
     return{
       mainPages:[
-        {id:0, title:"Merchandise", page:"merch", image:"https://picsum.photos/600/300/?image=25"},
+        {id:0, title:"Merchandise", page:"merch", image:"/img/products/maga.JPG"},
         {id:1, title:"Music",       page:"music", image:"/img/music.JPG"},
         {id:2, title:"Photography", page:"photos", image:"/img/photography.JPG"},
         {id:3, title:"Videography", page:"videos", image:"/img/videos.JPG"}

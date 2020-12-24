@@ -4,6 +4,10 @@
     <!-- <fd-button class="returnButton" styling="emphasized" type="standard" icon="nav-back" @click="openPage" /> -->
     <h1>Photography</h1>
     <hr>
+    <!-- https://embedsocial.com/blog/embed-instagram-feed-for-free/ -->
+
+  
+
     <div class="photosContainer">
       <img 
         v-for="i in displayPhotos" 
@@ -29,7 +33,7 @@ export default {
   data(){
     return{
       photos:[
-        {src:"https://picsum.photos/600/300/?image=25", title:"...", tag:"", width:0},
+        {src:"https://picsum.photos/600/300/?image=26", title:"...", tag:"", width:0},
         {src:"https://picsum.photos/600/300/?image=26", title:"...", tag:"", width:0},
         {src:"https://picsum.photos/600/300/?image=24", title:"...", tag:"", width:0},
         {src:"https://picsum.photos/600/300/?image=27", title:"...", tag:"", width:0},
@@ -99,7 +103,7 @@ export default {
 
 .photos:hover{
   z-index:10;
-  transform: scale(1.2);
+  transform: scale(1.3);
   transition: transform .3s ease-in-out;
 }
 

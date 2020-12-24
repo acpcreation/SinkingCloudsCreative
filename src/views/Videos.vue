@@ -33,10 +33,10 @@ export default {
   data(){
     return{
       videos: [
-        {link:"https://www.youtube.com/embed/JDwHghNS7yU", title:"San Francisco 2019",},
         {link:"https://www.youtube.com/embed/AMHRokLulf0", title:"Philippines 2020",},
+        {link:"https://www.youtube.com/embed/JDwHghNS7yU", title:"San Francisco 2019",},
         {link:"https://www.youtube.com/embed/CQbJIbhNyes", title:"Suriname 2018",},
-        // {link:"https://www.youtube.com/watch?v=kVDtQzcZLys", title:"Israel",},
+        // {link:"https://www.youtube.com/embed/yxDKfIgmXks", title:"Israel 2018",},
       ]
     }
   },
