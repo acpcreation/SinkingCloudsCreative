@@ -1,5 +1,7 @@
 <template>
-  <div class="tile" @click="openPage(pageName)">
+  <div class="tile" 
+    v-bind:class="{inactive: !production}"
+    @click="openPage(pageName)">
     <p class="title">{{title}}</p>
     <p class="subTitle">{{subTitle}}</p>
     <p>{{icon}}</p>
@@ -15,7 +17,8 @@ export default {
     subTitle: String,
     icon: String,
     footer: String,
-    pageName: String
+    pageName: String,
+    production: Boolean
   },
   methods:{
     openPage: function(value) {
@@ -71,6 +74,10 @@ export default {
   bottom: 13px;
   position: absolute;
   text-transform: capitalize;
+}
+
+.inactive{
+  background:rgba(248, 213, 213, 0.74)
 }
 
 </style>

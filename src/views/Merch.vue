@@ -11,7 +11,7 @@
           :title="i.title"
           :img-src="i.img"
           img-alt="Image" img-top
-          class="mb-2 card">
+          class="mb-2 card merch">
           <b-card-text class="subtitle">
             {{i.subtitle}}
           </b-card-text>
@@ -90,7 +90,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .main{
-  padding: 60px;
+  padding: 5vw;
 }
 
 .returnButton{
@@ -122,6 +122,11 @@ export default {
 
 .viewProductButton{
   float:right;
+}
+
+.merch img{
+  object-fit: cover;
+  height: 210px;
 }
 
 /* .card h4{

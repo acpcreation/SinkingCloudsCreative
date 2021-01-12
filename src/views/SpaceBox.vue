@@ -2,6 +2,7 @@
   <div class="main">
     <fd-button class="returnButton" styling="emphasized" type="light" icon="nav-back" @click="openPage" />
     <div>
+      <!-- Idea: https://ifunny.co/fun/31BowYUG7?s=cl -->
       <a-scene> 
         <a-assets>
           <a-asset-item id="grid" src="/3dmodels/pointGrid.obj"></a-asset-item>

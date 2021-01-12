@@ -8,6 +8,20 @@
         :cy="yCoords"
         style="fill:white;">
       </circle>
+
+      <rect width="50" height="50" 
+        style="fill:white;stroke-width:3;stroke:white;">
+        <animateMotion
+            path="M10,100 400,400 600,100 800,400 1000,100 800,500 600,200 400,500 10,100"
+            begin="0s" dur="10s" repeatCount="indefinite"/>
+          <!-- <animateTransform 
+          attributeName="transform"
+          type="rotate"
+          from="0 100"
+          to="360 100"
+          dur="3s"
+          repeatCount="indefinite"/> -->
+        </rect>
     </svg>
     
     <!-- https://jsfiddle.net/Herteby/x53494ef/ -->
@@ -75,7 +89,8 @@ export default {
       xCoords: 0, 
       yCoords: 0,
       interval: false,
-      hat: 0
+      hat: 0,
+      enemyBots:[]
     }
   },
 
@@ -133,6 +148,12 @@ export default {
 
       // console.log(this.xCoords+","+this.yCoords)
     },
+
+    generateEnemyBots: function(){
+
+    }
+
+
 
 
 

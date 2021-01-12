@@ -131,7 +131,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .main{
-  padding: 60px;
+  padding: 5vw;
 }
 
 .returnButton{
@@ -164,10 +164,6 @@ export default {
   height:90vh;
   
 }
-
-/* .svgContainer img{
-  width: 20vw;
-} */
 
 
 

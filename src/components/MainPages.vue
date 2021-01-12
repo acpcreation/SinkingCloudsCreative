@@ -47,7 +47,7 @@ export default {
     justify-content:space-around;
     flex-wrap: wrap;
     flex-direction: row;
-    padding: 20px 30px;
+    padding: 20px 0px;
     min-height: 40vh;
   }
 
@@ -58,6 +58,11 @@ export default {
     font-size: 22px;
     border:none;
     margin: 20px 10px;
+  }
+
+  .card img{
+    object-fit: cover;
+    height: 250px;
   }
   
   img{
