@@ -65,6 +65,11 @@ export default {
       "Events",
       "Traveling",
       "APIs",
+      "GitHub",
+      "Blender", 
+      "",
+      "",
+      ""
     ];
 
 

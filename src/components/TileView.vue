@@ -26,13 +26,13 @@ export default {
     return{
       tiles:[
         {title:"About", subTitle:"Overview of the Site", footer:"Creativity, Invention",              pageName:"about", production:true, icon:""},
-        {title:"Home Made", subTitle:"Projects From Home", footer:"Physical Projects",                pageName:"homeMade", production:false, icon:""},
-        {title:"Spacial Boxes", subTitle:"Rotating 3D Grid of Cubes", footer:"A-Frame",               pageName:"spaceBox", production:true, icon:""}, //https://ifunny.co/fun/31BowYUG7?s=cl
+        {title:"Home Made", subTitle:"Projects Made at Home", footer:"Workshop Projects",             pageName:"homeMade", production:true, icon:""},
+        {title:"Spacial Boxes", subTitle:"Rotating 3D Grid of Cubes", footer:"A-Frame, Blender",      pageName:"spaceBox", production:true, icon:""}, //https://ifunny.co/fun/31BowYUG7?s=cl
         {title:"Orbit Cloud", subTitle:"Randomized Rotating Rings", footer:"SVG, Animation",          pageName:"orbitCloud", production:true, icon:""},
         {title:"Spiral Dots", subTitle:"Rotating Circles Connected Together", footer:"SVG, Tracing",  pageName:"spiralDots", production:false, icon:""},
         {title:"Flying Game", subTitle:"Navigate Your Ship Past Obstacles", footer:"SVG",             pageName:"flyingGame", production:false, icon:""},
         {title:"Lava Laptop", subTitle:"Lava Lamp Simulation", footer:"SVG",                          pageName:"lavaLamp", production:false, icon:""},
-        {title:"Audio Visuals", subTitle:"Analyzes Audio and Creates Visual Orb", footer:"SVG, FFT",  pageName:"audioVisuals", production:false, icon:""},
+        // {title:"Audio Visuals", subTitle:"Analyzes Audio and Creates Visual Orb", footer:"SVG, FFT",  pageName:"audioVisuals", production:false, icon:""},
         {title:"Crack Generator", subTitle:"Dynamically Creates Cracks", footer:"iFunny",             pageName:"crackGenerator", production:false, icon:""},
         // {title:"Messaging", subTitle:"Websocket and REST Examples", footer:"",                        pageName:"websocketrest", production:false, icon:""},
         // {title:"", subTitle:"", footer:"", pageName:"", production:"", icon:""},
@@ -42,10 +42,12 @@ export default {
     }
   },
   mounted(){
-    if (window.location.href.indexOf("localhost") <= -1) {
-      for(let i in this.tiles){
-        if(this.tiles[i].prodStatus == false){
+    let url = window.location.href.toString();
+    if (url.includes("localhost") == false) {
+      for(let i=0; i < this.tiles.length; i++){
+        if(this.tiles[i].production == false){
           this.tiles.splice(i,1)
+          i--;
         }
       }
     }

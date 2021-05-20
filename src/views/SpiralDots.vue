@@ -12,23 +12,29 @@
     
 
     <div class="svgContainer">
-      <svg id="AudioVisualSVG" xmlns="http://www.w3.org/2000/svg">
+      <svg id="SpiralDotsSVG" xmlns="http://www.w3.org/2000/svg">
 
         <circle 
-          id="avCircle" 
-          r="10" 
+          r="6" 
           :cx="center.x" 
           :cy="center.y"
-          style="fill:black;">
+          style="fill:white;"/>
+
+        <circle 
+          v-for="i in dots"
+          :key="i.id"
+          :ref="i.id"
+          r="6" 
+          :cx="center.x" 
+          :cy="center.y"
+          style="fill:white;">
         
          <animateMotion 
-          dur="2s" 
+          :dur="i.time" 
           repeatCount="indefinite"
-          path="M-100,0 a25,25 0 1,1 200,0 a25,25 0 1,1 -200,0"/>
+          :path="i.path"/>
         </circle>
       </svg>
-      
-      <!-- <img id="AudioVisualSVG" src="/AudioVisual.svg"/> -->
     </div>
 
   </div>
@@ -48,16 +54,16 @@ export default {
       center: {
         x:0,
         y:0
-      }
+      },
+      dots:[]
       
-      
-
     }
   },
 
   mounted() {
     this.centerSVGData();
-
+    this.calculateRotationPath();
+    this.connectTheDots();
 
   },
 
@@ -67,13 +73,47 @@ export default {
     },
 
     centerSVGData: function(){
-      var width = (screen.width*.65)/2;
-      var height = (screen.height*.60)/2;
+      var width = (screen.width*.90)/2;
+      var height = (screen.height)/2;
       this.center = {
         x:width,
         y:height
       }
-    }
+    },
+
+    calculateRotationPath: function(){
+      // let path = "M-75,0 a25,25 0 1,1 150,0 a25,25 0 1,1 -150,0";
+      let total  = 10;
+
+      for(let i=1; i<=total ;i++){
+        let di =  50 * i;
+        let time = 2+(i/5);
+
+        let item = {
+          id:"dot"+i,
+          time: time+"s",
+          diameter: di,
+          path: `M-${di},0 a25,25 0 1,1 ${di*2},0 a25,25 0 1,1 -${di*2},0`
+        }
+        this.dots.push(item)
+      }      
+    },
+
+    connectTheDots: function(){
+      // let that = this;
+      // setInterval(function(){
+        // for(let i=1; i<= that.dots.length ;i++){
+          // let element = document.getElementById('dot'+i)
+          // console.log(element)
+
+        //   let element = that.$refs["dot"+i];
+        //   console.log(element)
+          
+        // }
+        // console.log(that.$refs)
+
+      // }, 3000);
+    },
 
 
 
@@ -113,9 +153,10 @@ export default {
   justify-content: center;
 }
 
-#AudioVisualSVG{
+#SpiralDotsSVG{
   width: 90vw; 
-  height:90vh;
+  height:100vh;
+  background-color: rgba(17, 39, 63, 0.664);
 }
 
 

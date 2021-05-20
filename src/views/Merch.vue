@@ -47,11 +47,11 @@ export default {
     return{
       merch:[
         {id:"B-W-Hat", title:"Black SC Hat", subtitle:"Black Sinking Clouds Hat w/ White Design", type:"Hat", img:"/img/products/scBlack.JPG", price:"$20"},
-        {id:"N-W-Hat", title:"Navy SC Hat", subtitle:"Navy Sinking Clouds Hat w/ White Design", type:"Hat", img:"https://picsum.photos/600/300/?image=25", price:"$20"},
+        {id:"N-W-Hat", title:"Navy SC Hat", subtitle:"Navy Sinking Clouds Hat w/ White Design", type:"Hat", img:"/img/products/scNavy.JPG", price:"$20"},
         {id:"W-B-Hat", title:"White SC Hat", subtitle:"White Sinking Clouds Hat w/ Black Design", type:"Hat", img:"https://picsum.photos/600/300/?image=25", price:"$20"},
         {id:"W-MAGA-NASA-Hat", title:"NASA MAGA Hat", subtitle:"White MAGA Hat w/ Space Design", type:"Hat", img:"/img/products/maga.JPG", price:"$20"},
 
-        {id:"R-Varsity-Jacket", title:"Varsity Jacket", subtitle:"Sinking Clouds Burgundy Varsity Jacket", type:"Jacket", img:"https://picsum.photos/600/300/?image=25", price:"$60"},
+        // {id:"R-Varsity-Jacket", title:"Varsity Jacket", subtitle:"Sinking Clouds Burgundy Varsity Jacket", type:"Jacket", img:"https://picsum.photos/600/300/?image=25", price:"$60"},
       ],
       
       purchaseItem:[],

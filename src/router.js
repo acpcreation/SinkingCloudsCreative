@@ -13,6 +13,8 @@ import SpiralDots from './views/SpiralDots.vue'
 import OrbitCloud from './views/OrbitCloud.vue'
 import About from './views/About.vue'
 import FlyingGame from './views/FlyingGame.vue'
+import HomeMade from './views/HomeMade.vue'
+
 
 
 Vue.use(Router)
@@ -72,7 +74,13 @@ export default new Router({
       path:'/flyingGame',
       name:'flyingGame',
       component: FlyingGame
+    },{
+      path:'/homeMade',
+      name:'homeMade',
+      component: HomeMade
     },
+    
+    
     
     
   ]
