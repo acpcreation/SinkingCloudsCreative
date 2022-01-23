@@ -109,7 +109,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .main{
-  padding: 5vw;
+  padding: 2vh 5vw;
 }
 
 .returnButton{

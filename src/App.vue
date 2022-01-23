@@ -66,10 +66,7 @@ hr{
   left: 50vw;
   top: 5px; */
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -40px;
-  margin-bottom: 0px;
+  margin:0px auto;
   cursor:pointer;
 }
 

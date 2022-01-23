@@ -14,6 +14,7 @@ import OrbitCloud from './views/OrbitCloud.vue'
 import About from './views/About.vue'
 import FlyingGame from './views/FlyingGame.vue'
 import HomeMade from './views/HomeMade.vue'
+import InnovativeElements from './views/InnovativeElements.vue'
 
 
 
@@ -78,6 +79,10 @@ export default new Router({
       path:'/homeMade',
       name:'homeMade',
       component: HomeMade
+    },{
+      path:'/InnovativeElements',
+      name:'InnovativeElements',
+      component: InnovativeElements
     },
     
     

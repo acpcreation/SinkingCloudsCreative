@@ -32,6 +32,7 @@ export default {
         {title:"Spiral Dots", subTitle:"Rotating Circles Connected Together", footer:"SVG, Tracing",  pageName:"spiralDots", production:false, icon:""},
         {title:"Flying Game", subTitle:"Navigate Your Ship Past Obstacles", footer:"SVG",             pageName:"flyingGame", production:false, icon:""},
         {title:"Lava Laptop", subTitle:"Lava Lamp Simulation", footer:"SVG",                          pageName:"lavaLamp", production:false, icon:""},
+        {title:"Innovative Elements", subTitle:"New innovative UI ideas", footer:"CSS, Vue",          pageName:"innovativeElements", production:false, icon:""},
         // {title:"Audio Visuals", subTitle:"Analyzes Audio and Creates Visual Orb", footer:"SVG, FFT",  pageName:"audioVisuals", production:false, icon:""},
         {title:"Crack Generator", subTitle:"Dynamically Creates Cracks", footer:"iFunny",             pageName:"crackGenerator", production:false, icon:""},
         // {title:"Messaging", subTitle:"Websocket and REST Examples", footer:"",                        pageName:"websocketrest", production:false, icon:""},

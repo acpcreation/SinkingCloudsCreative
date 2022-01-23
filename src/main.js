@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import FundamentalVue from 'fundamental-vue'
-import { BootstrapVue } from 'bootstrap-vue' //{ BootstrapVue, IconsPlugin }
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue' //{ BootstrapVue, IconsPlugin }
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
@@ -12,7 +12,7 @@ Vue.use(FundamentalVue);
 // Install BootstrapVue
 Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
-// Vue.use(IconsPlugin)
+Vue.use(IconsPlugin)
 
 
 new Vue({
