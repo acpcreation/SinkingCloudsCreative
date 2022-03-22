@@ -69,4 +69,10 @@ export default {
   padding: 20px 0px 20px 12px;
 }
 
+@media (max-width: 600px) {
+  .main{
+    justify-content:center;
+  }
+}
+
 </style>

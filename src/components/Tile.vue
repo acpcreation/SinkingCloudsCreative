@@ -32,7 +32,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-
 .tile{
   margin: 17px;
   padding: 15px;
@@ -78,6 +77,13 @@ export default {
 
 .inactive{
   background:rgba(248, 213, 213, 0.74)
+}
+
+@media (max-width: 600px) {
+  .tile{
+    transform: scale(0.7);
+    margin:-20px;
+  }
 }
 
 </style>

@@ -15,7 +15,7 @@ import About from './views/About.vue'
 import FlyingGame from './views/FlyingGame.vue'
 import HomeMade from './views/HomeMade.vue'
 import InnovativeElements from './views/InnovativeElements.vue'
-
+import Contact from './views/Contact.vue'
 
 
 Vue.use(Router)
@@ -83,6 +83,11 @@ export default new Router({
       path:'/InnovativeElements',
       name:'InnovativeElements',
       component: InnovativeElements
+    },
+    {
+      path:'/Contact',
+      name:'Contact',
+      component: Contact
     },
     
     

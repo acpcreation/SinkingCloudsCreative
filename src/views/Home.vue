@@ -1,5 +1,6 @@
 <template>
   <div class="app">
+    <p class="contact" @click="openPage('contact')">Contact</p>
     <MainPages/>
     <h2>Explore</h2>
     <hr/>
@@ -16,7 +17,15 @@ export default {
   components: {
     TileView,
     MainPages
+  },
+
+  methods: {
+    openPage: function(e) {
+      this.$router.push("/"+e);
+    },
+
   }
+
 }
 </script>
 
@@ -28,6 +37,18 @@ export default {
 h2{
   text-align: left;
   letter-spacing: 1px;
+}
+
+.contact{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+}
+
+.contact:hover{
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 

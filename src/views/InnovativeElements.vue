@@ -3,6 +3,9 @@
     <img class="iconImage" src="@/assets/MeltingCloudsWhite.png" @click="openPage" />
 
   <SmartMultiInput title="Title 1"/>
+  <p><b>Logo Idea: </b>C that is rotated 90deg to the right
+    Shaded dark to light top to bottom
+    Circle with line going down in the middle</p>
     
   </div>
 </template>
