@@ -8,7 +8,7 @@ import Photos from './views/Photos.vue'
 import Videos from './views/Videos.vue'
 import Music from './views/Music.vue'
 import Merch from './views/Merch.vue'
-import AudioVisuals from './views/AudioVisuals.vue'
+import AudioFlavors from './views/AudioFlavors.vue'
 import SpiralDots from './views/SpiralDots.vue'
 import OrbitCloud from './views/OrbitCloud.vue'
 import About from './views/About.vue'
@@ -56,9 +56,9 @@ export default new Router({
       name:'music',
       component: Music
     },{
-      path:'/audioVisuals',
-      name:'audioVisuals',
-      component: AudioVisuals
+      path:'/audioFlavors',
+      name:'audioFlavors',
+      component: AudioFlavors
     },{
       path:'/spiralDots',
       name:'spiralDots',

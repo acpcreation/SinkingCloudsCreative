@@ -33,12 +33,12 @@ export default {
   data(){
     return{
       videos: [
-        {link:"https://www.youtube.com/embed/3CwAv1aFCSo", title:"Sonatype Hobson ROI",},
+        {link:"https://www.youtube.com/embed/3CwAv1aFCSo", title:"Sonatype The SCA Mystery",},
         {link:"https://www.youtube.com/embed/QW1xkgTujvM", title:"The 2020 Recap",},
         {link:"https://www.youtube.com/embed/AMHRokLulf0", title:"Philippines 2020",},
         {link:"https://www.youtube.com/embed/JDwHghNS7yU", title:"San Francisco 2019",},
         {link:"https://www.youtube.com/embed/CQbJIbhNyes", title:"Suriname 2018",},
-        // {link:"https://www.youtube.com/embed/yxDKfIgmXks", title:"Israel 2018",},
+        {link:"https://www.youtube.com/embed/yxDKfIgmXks", title:"Israel 2018",},
       ]
     }
   },

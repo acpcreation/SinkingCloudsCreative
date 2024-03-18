@@ -46,10 +46,9 @@ export default {
   mounted() {
     this.technologies = [
       "Vue.js",
-      "HTML",
-      "CSS",
+      "HTML/CSS",
       "JavaScript",
-      "Responsive Design",
+      "TypeScript",
       "SVG Design",
       "SVG Animation",
       "A-Frame",
@@ -65,8 +64,14 @@ export default {
       "Events",
       "Traveling",
       "APIs",
-      "GitHub",
+      "GitHub Actions/SCM",
       "Blender", 
+      "GitLab CI/SCM",
+      "Bitbucket",
+      "Jenkins",
+      "Jira",
+      "ServiceNow",
+      "Legos",
       "",
       "",
       ""

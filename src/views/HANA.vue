@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <fd-button class="returnButton" styling="emphasized" type="standard" icon="nav-back" @click="openPage" />
-
+    <p>npm install @sap/hana-client</p>
   </div>
 </template>
 
@@ -22,31 +22,31 @@ export default {
 
   mounted() {
     console.log("Create HANA Express Connection..");
-    const hanaClient = require("@sap/hana-client");
-    const connection = hanaClient.createConnection();
-    const connectionParams = {
-      host : "hxehost",
-      port : 39013,
-      uid  : "SYSTEM",
-      pwd  : "********",
-      databaseName : "HXE"
-    }
-    connection.connect(connectionParams, (err) => {
-      if (err) {
-        return console.error("Connection error", err);
-      }
-      var whereClause = this.sqlParameter ? `WHERE "group" = '${this.sqlParameter}'` : "";
-      var sql = `SELECT "name" FROM food_collection ${whereClause}`;
+    // const hanaClient = require("@sap/hana-client");
+    // const connection = hanaClient.createConnection();
+    // const connectionParams = {
+    //   host : "hxehost",
+    //   port : 39013,
+    //   uid  : "SYSTEM",
+    //   pwd  : "********",
+    //   databaseName : "HXE"
+    // }
+    // connection.connect(connectionParams, (err) => {
+    //   if (err) {
+    //     return console.error("Connection error", err);
+    //   }
+    //   var whereClause = this.sqlParameter ? `WHERE "group" = '${this.sqlParameter}'` : "";
+    //   var sql = `SELECT "name" FROM food_collection ${whereClause}`;
 
-      connection.exec(sql, (err, rows) => {
-        connection.disconnect();
-        if (err) {
-          return console.error('SQL execute error:', err);
-        }
-        console.log("Results:", rows);
-        console.log(`Query '${sql}' returned ${rows.length} items`);
-      });
-    });
+    //   connection.exec(sql, (err, rows) => {
+    //     connection.disconnect();
+    //     if (err) {
+    //       return console.error('SQL execute error:', err);
+    //     }
+    //     console.log("Results:", rows);
+    //     console.log(`Query '${sql}' returned ${rows.length} items`);
+    //   });
+    // });
   
 
 

@@ -5,11 +5,6 @@
     <!-- <fd-button class="returnButton" styling="emphasized" type="standard" icon="nav-back" @click="openPage" /> -->
     <h1>Spiral Dots</h1>
     <hr>
-    <div class="content">
-      <p>https://ifunny.co/fun/Ua6zFELw7?s=cl </p>
-
-    </div>
-    
 
     <div class="svgContainer">
       <svg id="SpiralDotsSVG" xmlns="http://www.w3.org/2000/svg">
@@ -157,6 +152,9 @@ export default {
   width: 90vw; 
   height:100vh;
   background-color: rgba(17, 39, 63, 0.664);
+  border-radius: 10px;
+  margin-top:20px;
+  margin-bottom:20px;
 }
 
 
