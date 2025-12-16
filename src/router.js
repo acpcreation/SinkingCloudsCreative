@@ -24,11 +24,11 @@ export default new Router({
   mode: 'hash',
   routes: [
     {
-      path: '/',
+      path: '/home',
       name: 'home',
       component: Home
     },{
-      path:'/spaceBox',
+      path:'/',
       name:'spaceBox',
       component: SpaceBox
     },{
